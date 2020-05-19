@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"></ImageView>
+    <TextView
+        android:id="@+id/text_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display text"
+        android:layout_below="@+id/imageview"
+        android:textSize="26dp"
+        android:maxLines="5"
+        android:layout_margin="10dp"></TextView>
+    <Button
+        android:id="@+id/capture_image_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_above="@id/detect_image_btn"
+        android:text="Capture picture"
+        android:textSize="17dp"
+        android:background="@color/colorAccent"
+        android:layout_margin="10dp"></Button>
+    <Button
+        android:id="@+id/detect_image_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Recognise"
+        android:textSize="17dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"></Button>
+</RelativeLayout>
